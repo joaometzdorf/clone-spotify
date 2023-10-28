@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web player: música para todas as pessoas</title>
+    <link rel="icon" href="image/icon-spotify.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen flex flex-col bg-zinc-950">
+    <div class="flex flex-1 border-8 border-zinc-950">
+        <aside class="w-80 bg-zinc-900 border-2 border-zinc-900 rounded-2xl">
+
+            <!-- HOME -->
+            <div class="mx-[-8px] my-[-8px] py-6 px-4 border-8 border-zinc-950 rounded-2xl">
+                <a class="flex items-center" href="#">
+                    <img src="image/home.svg" alt="ícone de uma casa" class="w-6">
+                    <span class="text-zinc-500 font-medium pl-2 hover:text-zinc-100">Início</span>
+                </a>
+
+                <!-- SEARCH -->
+                <a class="flex items-center pt-6" href="#">
+                    <img src="image/search.svg" alt="ícone de uma lupa" class="w-6">
+                    <span class="text-zinc-500 font-medium pl-2 hover:text-zinc-100">Buscar</span>
+                </a>
+            </div>
+            <div class="mx-[-8px] border-t-8 border-zinc-950 rounded-xl px-6">
+                <!-- LIBRARY -->
+                <a class="flex items-center pt-8" href="#">
+                    <img src="image/library.svg" alt="ícone de livros" class="w-6">
+                    <span class="text-zinc-500 font-medium pl-2 hover:text-zinc-100">Sua Biblioteca</span>
+                    <div class="flex gap-4 pl-20">
+                        <img src="image/plus.svg" alt="ícone de +" class="">
+                        <img src="image/arrow-right.svg" alt="ícone de uma seta para direita" class="">
+                    </div>
+
+                </a>
+
+                <!-- BOTAO PLAYLIST E ALBUNS -->
+                <div class="pt-6">
+                    <a href="#" class="flex gap-6">
+                        <span
+                            class="bg-zinc-800 text-zinc-50 px-4 py-[4px] rounded-2xl font-medium text-sm hover:bg-zinc-700">Playlist</span>
+                        <span
+                            class="bg-zinc-800 text-zinc-50 px-4 py-[4px] rounded-2xl font-medium text-sm hover:bg-zinc-700">Álbuns</span>
+                    </a>
+                </div>
+
+                <!-- ICONS -->
+                <div class="flex items-center pt-10 justify-between" href="#">
+
+                    <div class="flex items-center">
+                        <img src="image/search.svg" alt="ícone de uma lupa" class="w-6">
+                    </div>
+                    <div class="flex items-center text-zinc-500 text-xs hover:text-zinc-50">
+                        <span class="pr-2 cursor-pointer">Recentes</span>
+                        <img src="image/list-minus.svg" alt="ícone de uma lista" class="w-6 cursor-pointer">
+                    </div>
+
+                </div>
+
+                <!-- PLAYLISTS -->
+                <div class="flex flex-col gap-4 pt-6">
+                    <a class="flex items-center bg-zinc-900 hover:bg-zinc-800" href="#">
+                        <img src="image/funk.jpg" alt=""
+                            class="w-12 h-12 border-2 border-zinc-600 rounded object-cover">
+                        <div>
+                            <span class="text-zinc-50 font-medium pl-4">Revoada</span>
+                            <p class="text-zinc-400 text-sm pl-4">Playlist • Spotify</p>
+                        </div>
+                    </a>
+                    <a class="flex items-center bg-zinc-900 hover:bg-zinc-800" href="#">
+                        <img src="image/raze.jpg" alt=""
+                            class="w-12 h-12 border-2 border-zinc-600 rounded object-cover">
+                        <div>
+                            <span class="text-zinc-50 font-medium pl-4">apenas balinha</span>
+                            <p class="text-zinc-400 text-sm pl-4">Playlist • Luiza Manoelle</p>
+                        </div>
+                    </a>
+                    <a class="flex items-center bg-zinc-900 hover:bg-zinc-800" href="#">
+                        <img src="image/girl.jpg" alt="" class="w-12 h-12 border-2 border-zinc-600 rounded">
+                        <div>
+                            <span class="text-zinc-50 font-medium pl-4">Project-D</span>
+                            <p class="text-zinc-400 text-sm pl-4">Playlist • leniizin</p>
+                        </div>
+                    </a>
+                    <a class="flex items-center bg-zinc-900 hover:bg-zinc-800" href="#">
+                        <img src="image/chill.jpg" alt="" class="w-12 h-12 border-2 border-zinc-600 rounded">
+                        <div>
+                            <span class="text-zinc-50 font-medium pl-4">peace and balinhas</span>
+                            <p class="text-zinc-400 text-sm pl-4">Playlist • leniizin</p>
+                        </div>
+                    </a>
+                    <a class="flex items-center bg-zinc-900 hover:bg-zinc-800" href="#">
+                        <img src="image/girl-backpack.jpg" alt="" class="w-12 h-12 border-2 border-zinc-600 rounded">
+                        <div>
+                            <span class="text-zinc-50 font-medium pl-4">relax</span>
+                            <p class="text-zinc-400 text-sm pl-4">Playlist • leniizin</p>
+                        </div>
+                    </a>
+                    <a class="flex items-center bg-zinc-900 hover:bg-zinc-800" href="#">
+                        <img src="image/doka.jpg" alt="" class="w-12 h-12 border-2 border-zinc-600 rounded">
+                        <div>
+                            <span class="text-zinc-50 font-medium pl-4">Doka</span>
+                            <p class="text-zinc-400 text-sm pl-4">Playlist • Cenk</p>
+                        </div>
+                    </a>
+                    <a class="flex items-center bg-zinc-900 hover:bg-zinc-800" href="#">
+                        <img src="image/yumeko.jpg" alt="" class="w-12 h-12 border-2 border-zinc-600 rounded">
+                        <div>
+                            <span class="text-zinc-50 font-medium pl-4">winwin</span>
+                            <p class="text-zinc-400 text-sm pl-4">Playlist • Luiza Manoelle</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </aside>
+        <main class="flex-1 bg-zinc-800 border-l-8 border-zinc-950 rounded-2xl">
+
+            <div>
+                <!-- ARROW -->
+                <div class="flex gap-2 px-10 py-6">
+                    <img src="image/arrow-left-circle.svg" alt="" class="w-8">
+                    <img src="image/arrow-right-circle.svg" alt="" class="w-8">
+                </div>
+                <!-- PLAY -->
+                <div class="pb-2">
+                    <span class="text-zinc-50 font-medium text-3xl pl-10">Tocados recentemente</span>
+                </div>
+                <!-- ALBUNS -->
+                <div class="grid grid-cols-7 gap-6 py-6 px-10">
+                    <div
+                        class="flex flex-col bg-zinc-900/50 border-8 rounded-xl border-zinc-900/0 items-center hover:bg-zinc-900 hover:border-zinc-900 cursor-pointer w-52">
+                        <img src="image/raze.jpg" alt="" class="w-40 h-40 mt-4 rounded-xl object-cover">
+                        <span class="text-zinc-50 font-medium w-3/4 mt-2">apenas balinha</span>
+                        <span class="text-zinc-400 font-light w-3/4">musicas para dar muita bala no vavas</span>
+                    </div>
+
+                    <div
+                        class="flex flex-col bg-zinc-900/50 border-8 rounded-xl border-zinc-900/0 items-center hover:bg-zinc-900 hover:border-zinc-900 cursor-pointer w-52">
+                        <img src="image/girl-backpack.jpg" alt="" class="w-40 h-40 mt-4 rounded-xl object-cover">
+                        <span class="text-zinc-50 font-medium w-3/4 mt-2">relax</span>
+                        <span class="text-zinc-400 font-light w-3/4">playlist relax para partidas de lol no mínimo
+                            estre...</span>
+                    </div>
+
+                    <div
+                        class="flex flex-col bg-zinc-900/50 border-8 rounded-xl border-zinc-900/0 items-center hover:bg-zinc-900 hover:border-zinc-900 cursor-pointer w-52">
+                        <img src="image/yumeko.jpg" alt="" class="w-40 h-40 mt-4 rounded-xl object-cover">
+                        <span class="text-zinc-50 font-medium w-3/4 mt-2">winwin</span>
+                        <span class="text-zinc-400 font-light w-3/4">playlist oficial dos bixero
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <!-- PLAY -->
+                <div class="pb-2 relative flex items-center">
+                    <span class="text-zinc-50 font-medium text-3xl pl-10">Episódios para você</span>
+                    <a class="absolute right-0 pr-10 text-zinc-400" href="#">Mostrar tudo</a>
+                </div>
+                <!-- ALBUNS -->
+                <div class="grid grid-cols-7 gap-6 py-6 px-10">
+                    <div
+                        class="flex flex-col bg-zinc-900/50 border-8 rounded-xl border-zinc-900/0 items-center hover:bg-zinc-900 hover:border-zinc-900 cursor-pointer w-52">
+                        <img src="image/mix1.jpg" alt="" class="w-40 h-40 mt-4 rounded-xl object-cover">
+                        <span class="text-zinc-50 font-medium w-3/4 mt-2">Daily Mix 1</span>
+                        <span class="text-zinc-400 font-light w-3/4">MC Hariel, Mc Davi, Mc IG e mais</span>
+                    </div>
+
+                    <div
+                        class="flex flex-col bg-zinc-900/50 border-8 rounded-xl border-zinc-900/0 items-center hover:bg-zinc-900 hover:border-zinc-900 cursor-pointer w-52">
+                        <img src="image/mix2.jpg" alt="" class="w-40 h-40 mt-4 rounded-xl object-cover">
+                        <span class="text-zinc-50 font-medium w-3/4 mt-2">Daily Mix 2</span>
+                        <span class="text-zinc-400 font-light w-3/4">THE ORAL CIGARETTES, LiSA, lol e mais</span>
+                    </div>
+
+                    <div
+                        class="flex flex-col bg-zinc-900/50 border-8 rounded-xl border-zinc-900/0 items-center hover:bg-zinc-900 hover:border-zinc-900 cursor-pointer w-52">
+                        <img src="image/mix3.jpg" alt="" class="w-40 h-40 mt-4 rounded-xl object-cover">
+                        <span class="text-zinc-50 font-medium w-3/4 mt-2">Daily Mix 3</span>
+                        <span class="text-zinc-400 font-light w-3/4">neko, Fly By Nightcore, Ryan Thistlebeck e
+                            mais</span>
+                    </div>
+
+                    <div
+                        class="flex flex-col bg-zinc-900/50 border-8 rounded-xl border-zinc-900/0 items-center hover:bg-zinc-900 hover:border-zinc-900 cursor-pointer w-52">
+                        <img src="image/mix4.jpg" alt="" class="w-40 h-40 mt-4 rounded-xl object-cover">
+                        <span class="text-zinc-50 font-medium w-3/4 mt-2">Daily Mix 4</span>
+                        <span class="text-zinc-400 font-light w-3/4">Mike Gudmann, LUNAX, Galwaro e mais</span>
+                    </div>
+
+                    <div
+                        class="flex flex-col bg-zinc-900/50 border-8 rounded-xl border-zinc-900/0 items-center hover:bg-zinc-900 hover:border-zinc-900 cursor-pointer w-52">
+                        <img src="image/mix5.jpg" alt="" class="w-40 h-40 mt-4 rounded-xl object-cover">
+                        <span class="text-zinc-50 font-medium w-3/4 mt-2">Daily Mix 5</span>
+                        <span class="text-zinc-400 font-light w-3/4">Yamashita, Teto, A Banca Records e mais</span>
+                    </div>
+
+                    <div
+                        class="flex flex-col bg-zinc-900/50 border-8 rounded-xl border-zinc-900/0 items-center hover:bg-zinc-900 hover:border-zinc-900 cursor-pointer w-52">
+                        <img src="image/mix6.jpg" alt="" class="w-40 h-40 mt-4 rounded-xl object-cover">
+                        <span class="text-zinc-50 font-medium w-3/4 mt-2">Daily Mix 6</span>
+                        <span class="text-zinc-400 font-light w-3/4">My Chemical Romance, Gorillaz, Imagine
+                            Drago...</span>
+                    </div>
+
+                    <div
+                        class="flex flex-col bg-zinc-900/50 border-8 rounded-xl border-zinc-900/0 items-center hover:bg-zinc-900 hover:border-zinc-900 cursor-pointer w-52">
+                        <img src="image/mix7.jpg" alt="" class="w-40 h-40 mt-4 rounded-xl object-cover">
+                        <span class="text-zinc-50 font-medium w-3/4 mt-2">Daily Mix 7</span>
+                        <span class="text-zinc-400 font-light w-3/4">MC Neguinho do Kaxeta, MC Lan, MC Paulin da
+                            Capi...</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </main>
+    </div>
+    <footer class="bg-zinc-950 h-20">
+        <!-- GERAL -->
+        <div class="flex items-center pt-2 pl-4 justify-between">
+            <!-- LEFT -->
+            <div class="flex items-center">
+                <img src="image/girl.jpg" alt="" class="w-12 h-12">
+                <div>
+                    <span class="text-zinc-50 font-medium ml-4 cursor-pointer hover:border-b-[1px]">Electric Love</span>
+                    <p class="text-zinc-400 text-sm ml-4 mr-12 cursor-pointer hover:border-b-[1px]">BØRNS</p>
+                </div>
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="flex flex-col items-center pl-28">
+                <div class="flex gap-4">
+                    <img src="image/shuffle.svg" alt="" class="w-6 cursor-pointer">
+                    <img src="image/skip-back.svg" alt="" class="w-6 cursor-pointer">
+                    <img src="image/play-circle.svg" alt="" class="w-6 cursor-pointer">
+                    <img src="image/skip-forward.svg" alt="" class="w-6 cursor-pointer">
+                    <img src="image/repeat.svg" alt="" class="w-6 cursor-pointer">
+                </div>
+                
+                <!-- LINHA DE PROGRESSO -->
+                <div class="flex pt-4 items-center gap-2">
+                    <p class="text-zinc-400 text-sm">1:56</p>
+                    <div class="h-1 rounded-full w-96 bg-zinc-600">
+                        <div class="bg-zinc-200 rounded-full w-80 h-1"></div>
+                    </div>
+                    <p class="text-zinc-400 text-sm">2:37</p>
+                </div>
+            </div>
+
+            <div class="flex gap-2 items-center pr-4">
+                <img src="image/monitor-play.svg" alt="" class="w-4 cursor-pointer">
+                <img src="image/mic-2.svg" alt="" class="w-4 cursor-pointer">
+                <img src="image/list-minus.svg" alt="" class="w-4 cursor-pointer">
+                <img src="image/pc-case.svg" alt="" class="w-4 cursor-pointer">
+                <img src="image/volume-1.svg" alt="" class="w-4 cursor-pointer">
+                <div class="h-1 rounded-full w-24 bg-zinc-600">
+                    <div class="h-1 rounded-full w-12 bg-zinc-300"></div>
+                </div>
+                <img src="image/picture-in-picture-2.svg" alt="" class="w-4 cursor-pointer">
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
